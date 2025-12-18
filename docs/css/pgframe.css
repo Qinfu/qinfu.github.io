@@ -1,0 +1,64 @@
+
+
+/* ==========================================================
+*
+* Basic Setting
+*
+========================================================== */
+
+
+body.locked {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+a {
+    text-decoration:none;
+    color: inherit;
+
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+a *{
+    pointer-events:none;
+}
+
+.pc a:hover {
+    text-decoration: underline;
+    color: #ff6400;
+}
+
+
+
+/***********************************
+共通パーツ
+***********************************/
+
+.noPC{
+    display:none;
+}
+
+.noSP{
+    display:initial;
+}
+
+address{
+    font-size:1.2rem;
+}
+
+/* for Sp --------------------*/
+@media screen and ( max-width:738px) {
+    
+
+    .noPC{
+        display:initial;
+    }
+
+    .noSP {
+        display: none !important;
+    }
+
+}
+
